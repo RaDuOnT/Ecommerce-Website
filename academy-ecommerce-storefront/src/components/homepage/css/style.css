@@ -1,0 +1,106 @@
+
+/* intro section style*/
+.banner-image{
+    position: relative;
+}
+.banner-title{
+    position: absolute;
+    left: -45%;
+    top: 25%;
+
+    transition: left 1.5s ease-in-out;
+}
+.banner-container{
+    position: relative;
+}
+.wave-container{
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    
+
+}
+.banner-container:hover .banner-title{
+    left: 5%;
+}
+
+/* best sales section style */
+.perfume-card-title{
+    font-size:18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 18px auto;
+    color: #2F4858
+}
+.perfume-card-description{
+    font-size: 14px;
+    margin: 6px;
+    max-width: 200px;
+    text-align: center;
+}
+.perfume-card-rating{
+    color: #2F4858;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 12px 0px;
+}
+.container-best-perfumes, .container-best-deals{
+    transition: transform .5s ease-in-out;
+}
+.container-best-perfumes:hover, .container-best-deals:hover{
+    transform: scale(1.1);
+}
+.container-best-perfumes img{
+    width: 35%;
+}
+
+/* deals section style */
+.deal-img{
+    border-radius: 12px;
+    width: 85%;
+}
+@media (max-width: 649px){
+    .banner-title{
+        display: none;
+    }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+    .deal-img{
+        width: 65%;
+    }
+}
+@media(max-width: 768px){
+    .container-home{
+        flex-direction: column-reverse;
+        
+    }
+    .container-home .container-info{
+        align-items: center;
+    }
+    .container-home .container-info p{
+        text-align: center;
+    }
+    .container-best-perfumes img{
+        width: 25%;
+    }
+}
+@media (min-width: 1200px) {
+    .deal-img{
+        width: 80%;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .banner-title{
+        font-size: 28px;
+    }
+}
+@media (min-width: 650px) and (max-width: 1023px) {
+    .banner-title{
+        font-size: 16px;
+    }
+}
+@media (min-width: 1920px) {
+    .banner-title{
+        font-size: 42px;
+    }
+}

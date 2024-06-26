@@ -1,0 +1,89 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    position: relative;
+    margin-bottom: 25px;
+}
+
+label{
+    display: block;
+    position: absolute;
+    top:50%;
+    left:0;
+    translate:0 -50%;
+    pointer-events:none;
+    color: #919191;
+    font-size: 16px;
+}
+
+input {
+    transition:0.3s;
+    width:100%;
+    height: 50px;
+    font-family: inherit;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #919191;
+    outline: none;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+
+}
+
+@media screen and (max-width: 600px){
+    input{
+        height: 40px;
+        font-size: 14px;
+    }
+    label{
+        font-size: 14px;
+    }
+}
+
+@keyframes in{
+    0%{
+        left:0;
+        right: auto;
+        opacity: 1;
+    }
+    50%{
+        left: 0;
+        right: auto;
+        opacity: 0;
+        scale:1;
+    }
+    50.1%{
+        left: auto;
+        right: 0;
+        opacity: 0;
+        scale:0.85;
+    }
+    100%{
+        color: #B93A87;
+        left: auto;
+        right: 0;
+        opacity: 1;
+        scale:0.85;
+    }
+}
+
+:is(input:focus, input.has-value)~label{
+    animation: in 0.5s both;
+}
+
+input:focus,
+input.has-value{
+    padding-right: 10px;
+    border-color: #B93A87;
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+} */

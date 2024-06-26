@@ -1,0 +1,20 @@
+.formDiv {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+
+}
+.wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:20px
+
+}
